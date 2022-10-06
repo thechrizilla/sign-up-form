@@ -10,52 +10,55 @@
 <body>
     <div class="left-side">
         <div class="logo">
-            <img class="logo-image" src="c.png" alt="">
+            <img class="logo-image" src="./images/c.png" alt="">
             <h1 class="logo-name">CHRIS CHAN</h1>
         </div>
     </div>
     <div class="right-side">
         <div class="top-right">
-            <p> This is not a real online service! 
+            <p class="dummy-text-one"> This is not a real online service! 
                 You know you need something like this
                 in your life to helo you realize your
                 deepest dreams. Sign up <em>now</em>
                 to get started.
             </p>
-            <p>
+            <p class="dummy-text-two">
                 You <em>know</em> you want to.
             </p>
         </div>
         <div class="mid-right">
-            <form class="sign-up-form" action="#">
-                <p class="form-title">Let's do this!</p>
-                <div class="form-inputs">
-                    <div class="form-inputs-left">
-                        <label for="first-name">First Name</label>
+            <form class="sign-up-form" id="sign-up-form" action="#">
+                <legend class="form-title">Let's do this!</legend>
+                <fieldset class="form-inputs">
+                    <label for="first-name">First Name
                         <input type="text" id="first-name"> 
+                    </label>
     
-                        <label for="last-name">Last Name</label>
+                    <label for="last-name">Last Name
                         <input type="text" id="last-name"> 
+                    </label>
     
-                        <label for="email">E-Mail</label>
+                    <label for="email">E-Mail
                         <input type="email" id="email"> 
-                    </div>
-                    <div class="form-inputs-right">
-                        <label for="phone">Phone</label>
+                    </label>
+
+                    <label for="phone">Phone
                         <input type="text" id="phone" minlength="10"> 
-    
-                        <label for="password">Password</label>
+                    </label>
+
+                    <label for="password">Password
                         <input type="password" id="password">
-                        
-                        <label for="confirm-password">Confirm Password</label>
+                    </label>
+   
+                    <label for="confirm-password">Confirm Password
                         <input type="text" id="confirm-password"> 
-                    </div>
-                </div>
-                <button class="create-button" type="submit">Create Account</button>
+                    </label>
+                </fieldset>
             </form>
         </div>
         <div class=" bottom-right">
-            <p>Already have an account? <a href="https://github.com/thechrizilla">Log in</a></p>
+            <button class="create-button" type="submit" form="sign-up-form">Create Account</button>
+            <p class="sign-in-link">Already have an account? <a href="https://github.com/thechrizilla">Log in</a></p>
         </div>
     </div>
 </body>

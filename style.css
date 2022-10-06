@@ -1,10 +1,20 @@
 @font-face {
     font-family: norse-bold;
-    src: url('Norse-Bold.otf');
+    src: url('./fonts/Norse-Bold.otf');
 }
 
+@font-face {
+    font-family: roboto;
+    src: url('./fonts/Roboto-Medium.ttf');
+}
+
+* {
+    font-family: roboto;
+}
 
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
 }
 
@@ -13,13 +23,13 @@ h1 {
     font-size: 32px;
 }
 
-/* left side */
+/* LEFT SIDE */
 .left-side {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("coffee.avif");
+    background-image: url("./images/coffee.avif");
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -36,7 +46,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     height: 20vh;
     width: 100%;
-    bottom: 150px;
+    bottom: 170px;
 }
 
 .logo-image {
@@ -59,54 +69,93 @@ h1 {
     flex-direction: column;
 }
 
+/* TOP RIGHT */
 .top-right {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(249, 250, 251);
     height: 100%;
 }
 
 .top-right > p{
+    position: relative;
     font-weight: bold;
     font-size: 24px;
+    padding-left: 30px;
 }
 
+.dummy-text-one {
+    padding-top: 150px;
+}
+
+.dummy-text-two {
+    padding-bottom: 25px;
+}
+
+/* MID RIGHT */
 .mid-right {
-
-}
-
-.bottom-right {
-    background-color: rgb(249, 250, 251);
-    height: 100%;
-    width: 100%;
-}
-
-
-/* form */
-.form-title {
-    font-weight: bold;
-    font-size: 36px;
-}
-
-form, .form-inputs-left, .form-inputs-right{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .form-inputs {
     display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    border: 0;
+    padding-left: 30px;
 }
 
-label {
+.form-title {
+    font-weight: bold;
+    font-size: 36px;
+    padding-left: 30px;
+}
+
+form {
     display: flex;
-    text-align: left;
-    text-transform: uppercase;
+    flex-direction: column;
+    flex-flow: row wrap;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 input {
-    flex-flow: column wrap;
-    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    border-radius: 5px;
+    border: 1px solid rgb(224, 224, 224);
+    height: 30px;
+    width: 10rem;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 140px;
+    padding-right: 50px;
+    padding-bottom: 25px;
 }
 
 
+/* BOTTOM RIGHT */
+.bottom-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
 button {
     background-color: #596D48;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 200px;
 }
